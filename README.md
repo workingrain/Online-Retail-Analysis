@@ -26,10 +26,12 @@ total_purchase =2.0021+0.5577(price)-0.5255(is_UK)+0.2040(Monday)+0.2390(Tuesday
 	Days of the week: These coefficients show how total purchases change relative to a baseline day. For example, Friday increases total purchases by 0.2662 units compared to the baseline. 
 	Months: Similar to days of the week, these coefficients show how purchases vary by month relative to the omitted baseline month.
 ### Cluster Analysis
-	Cluster count (out of 10,000)	Median for total_purchase	Mean for price	Proportion of customers who live in the UK
-Cluster 0	3807	0.713623	-0.514771 	0.865511
-Cluster 1	3131	0.712062	1.215699	0.912476
-Cluster 2	3062	-1.183804 		-0.562995	0.979559
+
+				Cluster count (out of 10,000)	Median for total_purchase	Mean for price		Proportion of customers who live in the UK
+  	Cluster 0		3807				0.713623			-0.514771 		0.865511
+ 	Cluster 1		3131				0.712062			1.215699		0.912476
+  	Cluster 2		3062				-1.183804 			-0.562995		0.979559
+
 The clustering analysis identified three distinct customer segments.
 	Cluster 0: Customers in this group have the highest total purchases but tend to buy lower-priced items. This segment likely consists of frequency buyers who prioritize cost-effective purchases
 	Cluster 1: These customers have high total purchases and tend to buy higher-priced items. This group is a valuable segment for premium offerings. 
@@ -57,10 +59,11 @@ Given the limitations of the linear regression model, exploring non-linear model
 The key benefits of this study are:
 ### Improved Customer Segmentation: 
 The cluster analysis provides a precise segmentation of customers based on their purchasing behavior. This allows businesses to tailor marketing strategies to different customer segments. This is expected to lead to improved customer retention and higher conversion rates. 
-	Cluster 0: This group represents 38.07% of the customer base with the most consistent purchasing behavior. Given their large size, increasing their purchasing frequency by even 10% could have a meaningful impact on overall revenue.
-	Cluster 1: This cluster comprises 31.31% of high-value buyers who prefer premium products. Since this cluster shows a higher mean price of 1.22, retaining 5-10% more of this segment could lead to a noticeable increase in revenue as they tend to buy higher-priced items. 
-	Cluster 2: This group represents 30.62% of buyers that can be engaged with cost-effective promotions. Even increasing their purchase activity by a small margin of 5-10% can still yield meaningful gains, given the size of this group.
-	Increased Revenue: Businesses can maximize revenue opportunities by focusing on targeted promotions for each customer segment. For example, loyalty programs and bulk purchase incentives for Cluster 0 customers are expected to increase their purchase frequency, while exclusive offers for Cluster 1 customers will help retain high-value buyers. 
+	Cluster 0: This group represents 38.07% of the customer base with the most consistent purchasing behavior. Given their large size, increasing their purchasing frequency by even 10% could have a meaningful 	impact on overall revenue.
+	Cluster 1: This cluster comprises 31.31% of high-value buyers who prefer premium products. Since this cluster shows a higher mean price of 1.22, retaining 5-10% more of this segment could lead to a 		noticeable increase in revenue as they tend to buy higher-priced items. 
+	Cluster 2: This group represents 30.62% of buyers that can be engaged with cost-effective promotions. Even increasing their purchase activity by a small margin of 5-10% can still yield meaningful gains, 	given the size of this group.
+### Increased Revenue: 
+Businesses can maximize revenue opportunities by focusing on targeted promotions for each customer segment. For example, loyalty programs and bulk purchase incentives for Cluster 0 customers are expected to increase their purchase frequency, while exclusive offers for Cluster 1 customers will help retain high-value buyers. 
 ### Better Resource Allocation:
 Understanding customer behavior through segmentation enables more efficient resource allocation, such as focusing marketing efforts on high-value segments (Cluster 1) while using cost-effective strategies to engage low-value segments (Cluster 2). 
 ### Enhanced Predictive Capabilities: 
